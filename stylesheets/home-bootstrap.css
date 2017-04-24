@@ -10,14 +10,14 @@ body{padding-top:20px}
   box-shadow: 0 0 6px 2px #b0b2ab;
 }
 
- .plan:hover {
+.plan:hover {
   background-color: #fff;
   -moz-box-shadow: 0 0 12px 3px #b0b2ab;
   -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
   box-shadow: 0 0 12px 3px #b0b2ab;
 }
 
- .plan {
+.plan {
   padding: 20px;
   margin-left:0px;
   color: #ff;
@@ -28,13 +28,19 @@ body{padding-top:20px}
 }
 
 .plan-name-bronze {
+  min-width: 50px;
+  max-width: 188px;
+  max-height: 15px;
+  min-height: 15px;
+
+
   padding: 20px;
   color: #fff;
   background-color: #665D1E;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
- }
+}
 
 .plan-name-silver {
   padding: 20px;
@@ -43,7 +49,7 @@ body{padding-top:20px}
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
- }
+}
 
 .plan-name-gold {
   padding: 20px;
@@ -52,7 +58,7 @@ body{padding-top:20px}
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
-  }
+}
 
 .pricing-table-bronze  {
   padding: 20px;
