@@ -37,7 +37,7 @@ body{padding-top:20px}
   background-color: #665D1E;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
 }
 
 
@@ -132,8 +132,4 @@ body{padding-top:20px}
   max-width: 12px;
   min-width: 12px;
   margin-top: 2px;
-}
-
-.icon-white icon-ok{
-  font-size: 5px !important;
 }
