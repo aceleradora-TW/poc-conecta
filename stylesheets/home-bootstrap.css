@@ -143,5 +143,17 @@ body{padding-top:20px}
 
 .ti-class{
 margin-top: 25px;
+}
 
+.comp{
+  color: white;
+  background: gray;
+  max-width: 30vw;
+  margin-top: 3px;
+  border-radius:  5px 5px 5px 5px;
+}
+
+.comp:hover{
+  color: black;
+  background: white;
 }
