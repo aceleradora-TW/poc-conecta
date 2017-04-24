@@ -123,3 +123,17 @@ body{padding-top:20px}
   padding: 8px 25px;
   font-size: 18px;
 }
+
+.btn-plan-select2 {
+  padding: 8px 27px;
+  font-size: 18px;
+  max-height: : 5px;
+  min-height: 5px;
+  max-width: 12px;
+  min-width: 12px;
+  margin-top: 2px;
+}
+
+.icon-white icon-ok{
+  font-size: 5px !important;
+}

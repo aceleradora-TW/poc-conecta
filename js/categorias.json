@@ -1,0 +1,13 @@
+{
+  'hardware': ['Manufatura', 'Outsourcing','Robôs'],
+  'software': [.     2-1 Eng Software_Desenvolvimento SW Client Server,
+.     2-2 Eng Software_Desenvolvimento SW Mobile,
+.     2-3 Eng Software_Desenvolvimento SW Web,
+.     2-4 Eng Software_Modelagem de Processo de SW,
+.     2-5 Eng Software_Engenharia de Requisitos,
+.     2-6 Eng Software_Gerenciamento de Requisitos,
+.     2-7 Eng Software_Verificação, Validação e Teste de Software,
+.     2-8 Eng Software_Escalabilidade de SW,
+.     2-9 Eng Software_Reuso de Software,
+.     2-10 Eng Software_Prototipagem de SW]
+}
