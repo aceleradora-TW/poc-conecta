@@ -8,7 +8,7 @@
 }
 .BoxCards{
 	width: 100%;
-	height: 93%;
+	height: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -17,7 +17,7 @@
 }
 .SectionCards{
 	width: 100%;
-	height: 130vh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,12 +27,13 @@
 .CardLine{
 	position: relative;
 	width: 95%;
-	height: 47%;
+	height: 45%;
 
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+
 
 }
 .Card{
@@ -59,17 +60,21 @@
 
 }
 .CardContent{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	width: 100%;
-	height: 70%;
-	background-color: white;
+	height: 80%;
+
 }
 .CardFooter{
 	width: 100%;
-	height: 15%;
+	height: 20%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: flex-start;
-	padding-bottom: 1%;
+
 }
 .ButtonPrimary{
 	width: 25%;
@@ -82,19 +87,36 @@
 	width: 100%;
 	height: 50%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	flex-direction: row;
 
-
 }
+
 .LineDescription{
-	width: 100%;
+	width: 98%;
 	height: 50%;
 	display: flex;
-    justify-content: space-between;
-	background-color: blue;
-
+  flex-direction: column;
+	border-radius: 7px;
+	box-shadow: 1px 3px 4px 2px #e0e0e0;
+	border: none;
+}
+.TitleDescription{
+	width: 100%;
+	height: 12%;
+	font-weight: bold;
+	font-size: 1.2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.LineList{
+	width: 100%;
+	height: 88%;
+	display: flex;
+	border: none;
+	flex-direction: row;
 }
 .LogoCard{
 	width: 20%;
@@ -103,17 +125,34 @@
 	justify-content: center;
 	align-items: center;
 
+
 }
 .TextCard{
 	text-align: center;
-	width: 78%;
+	width: 70%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	line-height: 1.5em;
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: white;
 
 }
 .List{
 	width: 32%;
 	height: 100%;
-	background-color: red;
+	/*background-color: #f9f9f9;*/
+}
+
+.u-fontBold{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+li{
+	line-height: 1.5em;
+	font-weight: lighter;
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
