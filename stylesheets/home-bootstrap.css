@@ -33,11 +33,11 @@ body{padding-top:20px}
   max-height: 15px;
   min-height: 15px;
   padding: 20px;
-  color: #fff;
-  background-color: #665D1E;
+  color: #eeeeee;
+  background-color: #3a71c7;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
 }
 
 
@@ -47,11 +47,11 @@ body{padding-top:20px}
   max-height: 15px;
   min-height: 15px;
   padding: 20px;
-  color: #fff;
-  background-color: #665D1E;
+  color: #eeeeee;
+  background-color: #3a71c7;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
 }
 
 
@@ -120,8 +120,13 @@ body{padding-top:20px}
 }
 
 .btn-plan-select {
+  margin-top: 3px;
+  margin-top: 3px;
   padding: 8px 25px;
   font-size: 18px;
+  color: #eeeeee;
+  background-color:gray;
+
 }
 
 .btn-plan-select2 {
@@ -132,8 +137,6 @@ body{padding-top:20px}
   max-width: 12px;
   min-width: 12px;
   margin-top: 2px;
-}
-
-.icon-white icon-ok{
-  font-size: 5px !important;
+  color: #eeeeee;
+  background-color:gray;
 }
