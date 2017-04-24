@@ -153,6 +153,7 @@ animation-delay: 10s;
 	width: 80%;
 	height: 32%;
 	background-color: #eeeeee;
+	margin-top: 20px;
 }
 .TitleComents{
 	width: 100%;
@@ -193,13 +194,13 @@ animation-delay: 10s;
 
 }
 .Button:hover{
-		box-shadow: 2px 2px 2px #9E9E9E;
+	box-shadow: 2px 2px 2px #9E9E9E;
 	background-color: #AA0C48;
 }
 .Coment{
 	width: 100%;
 	height: 80%;
-	background-color: blue;
+	/*background-color: blue;*/
 	display: flex;
 	justify-content: space-around;
 
@@ -210,18 +211,19 @@ animation-delay: 10s;
  display: flex;
  flex-direction: row;
  align-items: center;
- background-color: white;
+ /*background-color: white;*/
 
 }
 .DivAvatar{
-	width: 25%;
+	height: 400px;
+	width: 400px;
+	width:30%;
 	height: 80%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: green;
 	border-radius: 100%;
-
 }
 .DivContent{
 	width: 70%;
@@ -229,7 +231,13 @@ animation-delay: 10s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: red;
+	/*background-color: red;*/
+	font-size: 18px;
+	margin: 20px;
+	font-style: italic;
+}
+.toTheRight {
+	text-align: right;
 }
 a{
 	text-decoration: none;
