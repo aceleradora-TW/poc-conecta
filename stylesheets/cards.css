@@ -172,12 +172,12 @@ li{
 
 .magic-button:hover {
 	background-color: rgba(255, 255, 255, 1);
-    color: rgba(48, 91, 159, 1);
+  color: rgba(48, 91, 159, 1);
 }
 
 .success-message {
 	color: rgba(0, 128, 0, 1);
-    display: none;
+  display: none;
 	font-size: 16px;
-    padding-left: 15px;
+  padding-left: 15px;
 }
