@@ -1,5 +1,3 @@
-body{padding-top:20px}
-
 .pricing-table .plan {
   margin-left:0px;
   border-radius: 5px;
@@ -156,4 +154,5 @@ margin-top: 25px;
 .comp:hover{
   color: black;
   background: white;
+  cursor: pointer;
 }

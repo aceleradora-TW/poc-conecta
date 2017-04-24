@@ -29,9 +29,10 @@
 	align-items: center;
 	flex-direction: row;
 }
-.Logo{
-	width: 50%;
-	height: 100%;
+.Logo img{
+	width: 40%;
+	height: 20%;
+	padding-left: 12%;
 }
 .nav{
 	width: 50%;
@@ -42,8 +43,8 @@
 	flex-direction: row;
 }
 .ul{
-	margin-right: 6px;
-	width: 50%;
+	margin-right: 10px;
+	width: 60%;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -55,15 +56,15 @@
 	color: white;
 	width: 32%;
 	font-size: 1.2em;
-	height: 60%;
+	height: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 }
 .li:hover{
-
 	background-color: #E91E63;
+	cursor: pointer;
 }
 
 .BoxImage{
