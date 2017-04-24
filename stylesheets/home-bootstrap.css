@@ -33,8 +33,8 @@ body{padding-top:20px}
   max-height: 15px;
   min-height: 15px;
   padding: 20px;
-  color: #fff;
-  background-color: #665D1E;
+  color: #eeeeee;
+  background-color: #3a71c7;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 5px 5px;
@@ -47,11 +47,11 @@ body{padding-top:20px}
   max-height: 15px;
   min-height: 15px;
   padding: 20px;
-  color: #fff;
-  background-color: #665D1E;
+  color: #eeeeee;
+  background-color: #3a71c7;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
 }
 
 
