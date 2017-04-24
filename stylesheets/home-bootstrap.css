@@ -32,8 +32,6 @@ body{padding-top:20px}
   max-width: 188px;
   max-height: 15px;
   min-height: 15px;
-
-
   padding: 20px;
   color: #fff;
   background-color: #665D1E;
@@ -41,6 +39,22 @@ body{padding-top:20px}
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
 }
+
+
+.plan-name-bronze2 {
+  min-width: 873px;
+  max-width: 873px;
+  max-height: 15px;
+  min-height: 15px;
+  padding: 20px;
+  color: #fff;
+  background-color: #665D1E;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+
 
 .plan-name-silver {
   padding: 20px;
