@@ -1,0 +1,357 @@
+.SectionPrimary{
+
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #E0E0E0;
+	position: relative;
+
+}
+.SectionOpacity{
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	top: -1200px;
+
+}
+
+.Navbar{
+
+	width: 100%;
+	height: 90px;
+	background-color: #303030;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.Logo{
+	width: 50%;
+	height: 100%;
+}
+.nav{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	flex-direction: row;
+}
+.ul{
+	margin-right: 6px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.li{
+	background-color: #2980b9;
+	color: white;
+	width: 32%;
+	font-size: 1.2em;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.li:hover{
+
+	background-color: #E91E63;
+}
+
+.BoxImage{
+  margin-top: 2px;
+	width: 80%;
+	height: 38%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.image{
+	animation-direction: initial;
+	position: absolute;
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes animacao{
+	25% {
+	opacity: 1;
+
+}
+50% {
+	opacity: 0;
+}
+}
+.image:nth-child(1){
+animation-delay: 5s;
+}
+.image:nth-child(2){
+animation-delay: 10s;
+}
+}
+.image:nth-child(3){
+	animation-delay: 15s;
+
+}
+
+.image:nth-child(4){
+	animation-delay: 20s;
+
+}
+.BoxSearch{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border: solid 2px #eeeeee;
+	width: 80%;
+	height: 30%;
+	background-color: #3a71c7;
+}
+.TitleSearch{
+	font-size: 1.2em;
+	width: 100%
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: white;
+}
+.Search{
+	width: 100%;
+	height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.BoxButton{
+
+	width: 100%
+	height: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.BoxComents{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	height: 32%;
+	background-color: #eeeeee;
+}
+.TitleComents{
+	width: 100%;
+	height: 20%;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+	align-items: center;
+}
+.Input{
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+	width: 350px;
+	height: 40px;
+	background-color: white;
+	border: none;
+}
+
+.Input:hover{
+	box-shadow: 2px 2px 2px #9E9E9E;
+}
+.Button{
+	width: 100px;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+	background-color: #E91E63;
+	color: white;
+	box-shadow: 2px 2px #FA5C98;
+    text-decoration-color: white;
+
+}
+.Button:hover{
+		box-shadow: 2px 2px 2px #9E9E9E;
+	background-color: #AA0C48;
+}
+.Coment{
+	width: 100%;
+	height: 80%;
+	background-color: blue;
+	display: flex;
+	justify-content: space-around;
+
+}
+.Persona{
+ width: 45%;
+ height: 100%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ background-color: white;
+
+}
+.DivAvatar{
+	width: 25%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+	border-radius: 100%;
+
+}
+.DivContent{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+}
+a{
+	text-decoration: none;
+	text-decoration-style: none;
+	text-decoration-color: white;
+}
+.Text{
+	width: 100%;
+	height: 7%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.BoxCards{
+	width: 100%;
+	height: 93%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+
+}
+.SectionCards{
+	width: 100%;
+	height: 130vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #E0E0E0;
+}
+.CardLine{
+	position: relative;
+	width: 95%;
+	height: 47%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+}
+.Card{
+	border-radius: 5px;
+   width: 47%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   box-shadow: 2px 2px #efe5e5;
+
+}
+.CardTitle{
+
+	border-radius: 5px;
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2em;
+	color: white;
+	align-items: center;
+	background-color: #3a71c7;
+
+}
+.CardContent{
+	width: 100%;
+	height: 70%;
+	background-color: white;
+}
+.CardFooter{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-bottom: 1%;
+}
+.ButtonPrimary{
+	width: 25%;
+	height: 95%;
+	background-color: #3a71c7;
+	border-radius: 7px;
+	margin-right: 10px;
+}
+.LineLogo{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+
+
+}
+.LineDescription{
+	width: 100%;
+	height: 50%;
+	display: flex;
+    justify-content: space-between;
+	background-color: blue;
+
+}
+.LogoCard{
+	width: 20%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.TextCard{
+	text-align: center;
+	width: 78%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+
+}
+.List{
+	width: 32%;
+	height: 100%;
+	background-color: red;
+}
