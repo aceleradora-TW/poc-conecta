@@ -140,7 +140,7 @@
 }
 
 .ti-class{
-margin-top: 25px;
+  margin-top: 25px;
 }
 
 .comp{
@@ -152,7 +152,12 @@ margin-top: 25px;
 }
 
 .comp:hover{
-  color: black;
-  background: white;
+  color: #FFF;
+  background: #337ab7;
   cursor: pointer;
+}
+
+.nomes-areas {
+  font-size: 15px;
+  text-align: center;
 }
