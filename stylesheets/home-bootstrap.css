@@ -120,10 +120,10 @@
 .btn-plan-select {
   margin-top: 3px;
   margin-top: 3px;
-  padding: 8px 25px;
+  padding: 7px 25px;
   font-size: 18px;
-  color: #eeeeee;
-  background-color:gray;
+  color: #000;
+  background-color: #eeeeee;
 
 }
 
@@ -144,8 +144,8 @@ margin-top: 25px;
 }
 
 .comp{
-  color: white;
-  background: gray;
+  color: black;
+  background: #f3f3f3;
   max-width: 30vw;
   margin-top: 3px;
   border-radius:  5px 5px 5px 5px;

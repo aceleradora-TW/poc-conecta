@@ -13,16 +13,16 @@
 
 
   <script>
-    function selectArea(area){
-      if(area == 'Hardware'){
-        //alert('hard');
-        $('#softwareArea').show();
-        $('#hardwareArea').hide();
-      }else if(area == 'Software'){
-        $('#softwareArea').hide();
-        $('#hardwareArea').show();
-      }
+  function selectArea(area){
+    if(area == 'Hardware'){
+      //alert('hard');
+      $('#softwareArea').show();
+      $('#hardwareArea').hide();
+    }else if(area == 'Software'){
+      $('#softwareArea').hide();
+      $('#hardwareArea').show();
     }
+  }
 
   //jquery
   console.log($);
@@ -119,11 +119,11 @@
             T.I
           </div>
         </div>
-        <a href="#" class="btn btn-primary btn-plan-select" onclick="selectArea('Hardware')"><i class="icon-white icon-ok"></i> Hardware</a>
-        <a href="#" class="btn btn-primary btn-plan-select" onclick="selectArea('Software')"><i class="icon-white icon-ok"></i> Software</a>
-        <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Administração</a>
-        <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Serviços</a>
-        <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Comercial</a>
+        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Hardware')"><i class="icon-white icon-ok"></i> Hardware</div>
+        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Software')"><i class="icon-white icon-ok"></i> Software</div>
+        <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Administração</div>
+        <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Serviços</div>
+        <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Comercial</div>
 
 
         <!-- <div class="" hidden=""> -->
@@ -186,7 +186,7 @@
           <div class="col-md-6">
 
             <div class="comp">
-                Desenvolvimento SW Client Server
+              Desenvolvimento SW Client Server
             </div>
 
             <div class="comp">
@@ -233,34 +233,13 @@
 
         </div>
 
-        <div class="" hidden="">
-          <!-- HARDWARE -->
-          .     1-1 Manufatura
-          .     1-2 Outsourcing (Hardware)
-          .     1-3 Robôs
-          .     1-4 Escalabilidade (Hardware)
-          .     1-5 Automação industrial / comercial (Hardware)
-          .     1-6 RFID
-          .     1-7 Protótipos (Hardware)
-          .     1-8 Infraestrutura (Hardware)
-          .     1-9 Integração (Hardware)
-          .     1-10 Qualidade (Hardware)
-          .     1.11 Certificação
-          <!-- FIM HARDWARE -->
-        </div>
-
-
-        <!-- ADMINISTRAÇÃO -->
-
-
-        <!-- FIM ADMIN -->
-
-
 
 
       </div>
     </div>
 
+    <!-- SUB-ÁREAS, POR ENQUANTO SEM... -->
+<!--
     <div class="plan col-sm-4 col-lg-3">
       <div class="plan-name-bronze">
         <div class="nomes-areas">
@@ -303,7 +282,7 @@
       <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
       <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
       <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-    </div>
+    </div> -->
 
 
 
@@ -318,25 +297,25 @@
 
 
 
-  <!-- DEPOIMENTOS -->
-  <div class="BoxComents"> <div class="TitleComents">Depoimentos</div>
-	<div class="Coment">
-	<div class="Persona">
+<!-- DEPOIMENTOS -->
+<div class="BoxComents"> <div class="TitleComents">Depoimentos</div>
+<div class="Coment">
+  <div class="Persona">
     <img src="images/leonardo_iglesias.jpg" class="DivAvatar"alt="Cara do Leco">
-		<div class="DivContent">
+    <div class="DivContent">
       Leco Iglesias<br><br>
       "Formamos diversas parcerias através do Conecta, agilizando processos que antes eram lentos e desgastantes."
-		</div>
-	</div>
-	<div class="Persona">
-		<div class="DivContent toTheRight">
+    </div>
+  </div>
+  <div class="Persona">
+    <div class="DivContent toTheRight">
       Rafa Weiblen<br><br>
       "Com a plataforma encontrei ótimos fornecedores dentro do TecnoPuc. Antes, precisávamos fazer essa busca fora do estado."
-		</div>
-		<img src="images/rafael_weiblen.jpg" class="DivAvatar"alt="Cara do Leco">
-	</div>
-	</div>
-	</div>
+    </div>
+    <img src="images/rafael_weiblen.jpg" class="DivAvatar"alt="Cara do Leco">
+  </div>
+</div>
+</div>
 <!-- FIM DEPOIMENTOS -->
 
 </section>
