@@ -73,7 +73,7 @@
 	height: 20%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 
 }
 .ButtonPrimary{
@@ -155,4 +155,29 @@ li{
 	font-weight: lighter;
 	font-size: 0.9em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* BOTAO MAGICO DA GURIZADA */
+
+.magic-button {
+    background-color: rgba(48, 91, 159, 1);
+    border: 2px solid rgba(48, 91, 159, 1);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+.magic-button:hover {
+	background-color: rgba(255, 255, 255, 1);
+    color: rgba(48, 91, 159, 1);
+}
+
+.success-message {
+	color: rgba(0, 128, 0, 1);
+    display: none;
+	font-size: 16px;
+    padding-left: 15px;
 }
