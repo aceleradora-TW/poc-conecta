@@ -1,0 +1,15 @@
+{
+  'hardware': ['Manufatura', 'Outsourcing','Robôs', 'Escalabilidade', 'Automação industrial',
+    'Protótipos', 'Infraestrutura', 'Integração', 'Qualidade', 'Certificação'],
+
+
+  'software': ['Desenvolvimento Web', 'Desenvolvimento Mobile', 'Modelagem de Processo',
+    'Engenharia de Requisitos', 'Validação e Teste de Software', 'Banco de dados',
+    'Big data', 'Lean', 'Segurança de Sistemas', 'Métodos ágeis'],
+
+  'administração': ['Finanças', 'Área Jurídica', 'Parcerias', 'Propriedade intelectual',
+    'Gestão de projetos', 'Governança'],
+
+  'serviços': ['Consultoria', 'Documentação', 'Internet das coisas', 'Coaching',
+     'Games', 'Escalabilidade'],
+}
