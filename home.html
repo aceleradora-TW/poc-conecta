@@ -12,32 +12,41 @@
   <script src="js/bootstrap.min.js"> </script>
 
 
-<script>
-
+  <script>
+    function selectArea(area){
+      if(area == 'Hardware'){
+        //alert('hard');
+        $('#softwareArea').show();
+        $('#hardwareArea').hide();
+      }else if(area == 'Software'){
+        $('#softwareArea').hide();
+        $('#hardwareArea').show();
+      }
+    }
 
   //jquery
   console.log($);
-</script>
-<style>
+  </script>
+  <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
+    width: 70%;
+    margin: auto;
   }
   </style>
 </head>
 <body>
-<div class="Navbar">
-		<div class="Logo"></div>
-		<div class="nav">
-			<ul class="ul">
-			<li class="li">Sobre</li>
-			<li class="li">Cadastre-se</li>
+  <div class="Navbar">
+    <div class="Logo"></div>
+    <div class="nav">
+      <ul class="ul">
+        <li class="li">Sobre</li>
+        <li class="li">Cadastre-se</li>
 
-			<li class="li">Login</li>
-			</ul>
-		</div>
-	</div>
+        <li class="li">Login</li>
+      </ul>
+    </div>
+  </div>
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
     <!-- Indicators -->
@@ -82,26 +91,25 @@
   </script>
 </head>
 
+<!-- BUSCA AVANÇADA -->
+<div class="BoxSearch">
+  <div class="TitleSearch">Encontre parcerias agora</div>
 
+  <div class="Search">
+    <input type="text"  placeholder="  Digite aqui palavras chave. Ex.: 'desenvolvimento, testes'" class="Input"/>
 
-
-
-
-    <!-- BUSCA AVANÇADA -->
-
-    <!-- <div class="BoxSearch"> -->
-    <!-- <div class="TitleSearch">Encontre parcerias agora</div> -->
-<div class="BoxButton">
+    <div class="BoxButton">
       <a href="cards.html"><div class="Button">Buscar</div></a>
     </div>
   </div>
+</div>
 
 
-  <!-- PRIMEIRA TABLE -->
+<!-- PRIMEIRA TABLE -->
 
-  <div class="container">
-    <div class="pricing-table pricing-three-column row">
-<div class="ti-class">
+<div class="container">
+  <div class="pricing-table pricing-three-column row">
+    <div class="ti-class">
 
       <div class="plan col-sm-4 col-lg-12">
         <div class="plan-name-bronze2">
@@ -109,33 +117,119 @@
             T.I
           </div>
         </div>
-        <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Hardware</a>
-        <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Software</a>
+        <a href="#" class="btn btn-primary btn-plan-select" onclick="selectArea('Hardware')"><i class="icon-white icon-ok"></i> Hardware</a>
+        <a href="#" class="btn btn-primary btn-plan-select" onclick="selectArea('Software')"><i class="icon-white icon-ok"></i> Software</a>
         <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Administração</a>
         <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Serviços</a>
         <a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Comercial</a>
 
 
         <!-- <div class="" hidden=""> -->
-          <!-- SOFTWARE -->
-          <div class="comp">
-            Desenvolvimento SW Client Server
-                      </div>
-          Desenvolvimento SW Mobile
-          <div class="">
-          Desenvolvimento SW Web
-          Modelagem de Processo de SW
-          Engenharia de Requisitos
-          Gerenciamento de Requisitos
-          Verificação, Validação e Teste de Software
-          Escalabilidade de SW
-          Reuso de Software
-          Prototipagem de SW
+        <!-- SOFTWARE -->
+        <div class="row" id="softwareArea">
+          <div class="col-md-6">
 
-          <!-- FIM SOFTWARE -->
+            <div class="comp">
+              Desenvolvimento SW Client Server
+            </div>
 
-        <!-- </div> -->
+            <div class="comp">
+              Desenvolvimento SW Mobile
+            </div>
 
+            <div class="comp">
+              Desenvolvimento SW Web
+            </div>
+
+            <div class="comp">
+              Modelagem de Processo de SW
+            </div>
+
+            <div class="comp">
+              Engenharia de Requisitos
+            </div>
+
+          </div>
+          <div class="col-md-6">
+
+
+            <div class="comp">
+              Gerenciamento de Requisitos
+            </div>
+
+            <div class="comp">
+              Verificação, Validação e Teste de Software
+            </div>
+
+            <div class="comp">
+              Escalabilidade de SW
+            </div>
+
+            <div class="comp">
+              Reuso de Software
+            </div>
+
+            <div class="comp">
+              Prototipagem de SW
+            </div>
+
+          </div>
+
+        </div>
+        <!-- FIM SOFTWARE -->
+
+        <!-- Inicio Hardware -->
+
+        <div class="row" id="hardwareArea" style="display: none;">
+          <div class="col-md-6">
+
+            <div class="comp">
+              Hard1
+            </div>
+
+            <div class="comp">
+              Desenvolvimento SW Mobile
+            </div>
+
+            <div class="comp">
+              Desenvolvimento SW Web
+            </div>
+
+            <div class="comp">
+              Modelagem de Processo de SW
+            </div>
+
+            <div class="comp">
+              Engenharia de Requisitos
+            </div>
+
+          </div>
+          <div class="col-md-6">
+
+
+            <div class="comp">
+              Gerenciamento de Requisitos
+            </div>
+
+            <div class="comp">
+              Verificação, Validação e Teste de Software
+            </div>
+
+            <div class="comp">
+              Escalabilidade de SW
+            </div>
+
+            <div class="comp">
+              Reuso de Software
+            </div>
+
+            <div class="comp">
+              Prototipagem de SW
+            </div>
+
+          </div>
+
+        </div>
 
         <div class="" hidden="">
           <!-- HARDWARE -->
@@ -165,58 +259,59 @@
       </div>
     </div>
 
-      <div class="plan col-sm-4 col-lg-3">
-        <div class="plan-name-bronze">
-          <div class="nomes-areas">
-            Ciências da Vida
-          </div>
+    <div class="plan col-sm-4 col-lg-3">
+      <div class="plan-name-bronze">
+        <div class="nomes-areas">
+          Ciências da Vida
         </div>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
       </div>
-
-      <div class="plan col-sm-4 col-lg-3">
-        <div class="plan-name-bronze">
-          <div class="nomes-areas">
-            Meio Ambiente
-          </div>
-        </div>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      </div>
-
-      <div class="plan col-sm-4 col-lg-3">
-        <div class="plan-name-bronze">
-          <div class="nomes-areas">
-            Energia
-          </div>
-        </div>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      </div>
-
-      <div class="plan col-sm-4 col-lg-3">
-        <div class="plan-name-bronze">
-          <div class="nomes-areas">
-            Industria Criativa
-          </div>
-        </div>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-        <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      </div>
-
-
-
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
     </div>
+
+    <div class="plan col-sm-4 col-lg-3">
+      <div class="plan-name-bronze">
+        <div class="nomes-areas">
+          Meio Ambiente
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+    </div>
+
+    <div class="plan col-sm-4 col-lg-3">
+      <div class="plan-name-bronze">
+        <div class="nomes-areas">
+          Energia
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+    </div>
+
+    <div class="plan col-sm-4 col-lg-3">
+      <div class="plan-name-bronze">
+        <div class="nomes-areas">
+          Industria Criativa
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+    </div>
+
+
+
   </div>
+</div>
 
-  <!-- FIM PRIMEIRA TABLE -->
+<!-- FIM PRIMEIRA TABLE -->
 
-  <!-- FIM BUSCA AVANÇADA -->
+<!-- FIM BUSCA AVANÇADA -->
+
 
 
 
