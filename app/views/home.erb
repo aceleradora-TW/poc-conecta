@@ -40,13 +40,18 @@
   }
 
  $(document).ready(function() {
+   $('#btnHardware').addClass('active');
    $("#searchInput").keyup(function(event){
      if(event.keyCode == 13){
         $("#searchLink").click();
       }
    });
  })
-
+function goSearch(){
+  var param = $('#searchInput').val();
+  url  = "/search?q=" + param;
+  window.location = url;
+}
 
 
   //jquery
@@ -123,11 +128,11 @@
 
     <input type="text"  placeholder="Digite aqui palavras chave. Ex: 'Teste de Software'" class="Input" id="searchInput"/>
     <div class="BoxButton">
-      <a href="/search"><div class="btn btn-primary btn-plan-select" id="searchLink">Buscar</div></a>
+      <a onclick="goSearch()"><div class="btn btn-primary btn-plan-select" id="searchLink">Buscar</div></a>
     </div>
   </div>
 </div>
-
+</form>
 
 <!-- PRIMEIRA TABLE -->
 
@@ -207,15 +212,15 @@
         <div class="row" id="hardwareArea" style="display: none;">
           <div class="col-md-6">
 
-            <div class="comp">
+            <div class="comp" onclick="window.location = '/search?q=Desenvolvimento Client Server'">
               Desenvolvimento Client Server
             </div>
 
-            <div class="comp">
+            <div class="comp" onclick="window.location = '/search?q=Desenvolvimento Mobile'">
               Desenvolvimento Mobile
             </div>
 
-            <div class="comp">
+            <div class="comp" onclick="window.location = '/search?q=Desenvolvimento Web'">
               Desenvolvimento Web
             </div>
 
