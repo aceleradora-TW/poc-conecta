@@ -168,19 +168,19 @@ li{
 /* BOTAO MAGICO DA GURIZADA */
 
 .magic-button {
-    background-color: rgba(48, 91, 159, 1);
-    border: 2px solid rgba(48, 91, 159, 1);
-    border-radius: 8px;
+    background-color: rgba(46, 109, 164, 1);
+    border: 2px solid rgba(46, 109, 164, 1);
+    border-radius: 6px;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     font-size: 16px;
-    padding: 15px 32px;
+    padding: 10px 15px;
     text-align: center;
 }
 
 .magic-button:hover {
 	background-color: rgba(255, 255, 255, 1);
-  color: rgba(48, 91, 159, 1);
+  color: rgba(46, 109, 164, 1);
 }
 
 .success-message {
