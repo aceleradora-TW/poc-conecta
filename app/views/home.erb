@@ -16,11 +16,17 @@
   function selectArea(area){
     if(area == 'Hardware'){
       //alert('hard');
-      $('#softwareArea').show();
       $('#hardwareArea').hide();
+      $('#adminArea').hide();
+      $('#softwareArea').show();
     }else if(area == 'Software'){
       $('#softwareArea').hide();
+      $('#adminArea').hide();
       $('#hardwareArea').show();
+    }else if(area == 'Admin'){
+      $('#softwareArea').hide();
+      $('#hardwareArea').hide();
+      $('#adminArea').show();
     }
   }
 
@@ -95,7 +101,7 @@
   <div class="TitleSearch">Encontre parcerias agora</div>
 
   <div class="Search">
-    <input type="text"  placeholder="  Digite aqui palavras chave. Ex.: 'desenvolvimento, testes'" class="Input"/>
+    <input type="text"  placeholder="Digite aqui palavras chave. Ex: 'Teste de Software'" class="Input"/>
 
     <div class="BoxButton">
       <a href="/search"><div class="Button">Buscar</div></a>
@@ -118,9 +124,9 @@
         </div>
         <div class="btn btn-primary btn-plan-select" onclick="selectArea('Hardware')"><i class="icon-white icon-ok"></i> Hardware</div>
         <div class="btn btn-primary btn-plan-select" onclick="selectArea('Software')"><i class="icon-white icon-ok"></i> Software</div>
-        <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Administração</div>
-        <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Serviços</div>
-        <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Comercial</div>
+        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Admin')"><i class="icon-white icon-ok"></i> Administração</div>
+        <!-- <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Serviços</div>
+        <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Comercial</div> -->
 
 
         <!-- <div class="" hidden=""> -->
@@ -183,19 +189,19 @@
           <div class="col-md-6">
 
             <div class="comp">
-              Desenvolvimento SW Client Server
+              Desenvolvimento Client Server
             </div>
 
             <div class="comp">
-              Desenvolvimento SW Mobile
+              Desenvolvimento Mobile
             </div>
 
             <div class="comp">
-              Desenvolvimento SW Web
+              Desenvolvimento Web
             </div>
 
             <div class="comp">
-              Modelagem de Processo de SW
+              Modelagem de Processo
             </div>
 
             <div class="comp">
@@ -223,12 +229,64 @@
             </div>
 
             <div class="comp">
-              Prototipagem de SW
+              Prototipagem
+            </div>
+          </div>
+        </div>
+        <!-- Fim Hardware -->
+
+
+        <!-- Inicio Administração -->
+
+        <div class="row" id="adminArea" style="display: none;">
+          <div class="col-md-6">
+
+            <div class="comp">
+              Finanças
+            </div>
+
+            <div class="comp">
+              Área Jurídica
+            </div>
+
+            <div class="comp">
+              Parcerias
+            </div>
+
+            <div class="comp">
+              Propriedade intelectual
+            </div>
+
+            <div class="comp">
+              Gestão de projetos
             </div>
 
           </div>
 
+          <div class="col-md-6">
+            <div class="comp">
+              Governança
+            </div>
+
+            <div class="comp">
+              Gestão de operação
+            </div>
+
+            <div class="comp">
+              Inovação
+            </div>
+
+            <div class="comp">
+              Negociação
+            </div>
+
+            <div class="comp">
+              Gestão de conhecimento
+            </div>
+          </div>
         </div>
+        <!-- Fim Administração -->
+
 
 
 
@@ -236,54 +294,54 @@
     </div>
 
     <!-- SUB-ÁREAS, POR ENQUANTO SEM... -->
-<!--
+    <!--
     <div class="plan col-sm-4 col-lg-3">
-      <div class="plan-name-bronze">
-        <div class="nomes-areas">
-          Ciências da Vida
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-    </div>
-
-    <div class="plan col-sm-4 col-lg-3">
-      <div class="plan-name-bronze">
-        <div class="nomes-areas">
-          Meio Ambiente
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-    </div>
-
-    <div class="plan col-sm-4 col-lg-3">
-      <div class="plan-name-bronze">
-        <div class="nomes-areas">
-          Energia
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-    </div>
-
-    <div class="plan col-sm-4 col-lg-3">
-      <div class="plan-name-bronze">
-        <div class="nomes-areas">
-          Industria Criativa
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-      <a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
-    </div> -->
-
-
-
+    <div class="plan-name-bronze">
+    <div class="nomes-areas">
+    Ciências da Vida
   </div>
+</div>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+</div>
+
+<div class="plan col-sm-4 col-lg-3">
+<div class="plan-name-bronze">
+<div class="nomes-areas">
+Meio Ambiente
+</div>
+</div>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+</div>
+
+<div class="plan col-sm-4 col-lg-3">
+<div class="plan-name-bronze">
+<div class="nomes-areas">
+Energia
+</div>
+</div>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+</div>
+
+<div class="plan col-sm-4 col-lg-3">
+<div class="plan-name-bronze">
+<div class="nomes-areas">
+Industria Criativa
+</div>
+</div>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+<a href="#" class="btn btn-primary btn-plan-select2"><i class="icon-white icon-ok"></i> Select</a>
+</div> -->
+
+
+
+</div>
 </div>
 
 <!-- FIM PRIMEIRA TABLE -->

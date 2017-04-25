@@ -63,7 +63,7 @@
 }
 
 .BoxImage{
-  margin-top: 2px;
+	margin-top: 2px;
 	width: 80%;
 	height: 38%;
 	overflow: hidden;
@@ -83,18 +83,18 @@
 }
 @keyframes animacao{
 	25% {
-	opacity: 1;
+		opacity: 1;
 
-}
-50% {
-	opacity: 0;
-}
+	}
+	50% {
+		opacity: 0;
+	}
 }
 .image:nth-child(1){
-animation-delay: 5s;
+	animation-delay: 5s;
 }
 .image:nth-child(2){
-animation-delay: 10s;
+	animation-delay: 10s;
 }
 }
 .image:nth-child(3){
@@ -112,13 +112,12 @@ animation-delay: 10s;
 	flex-direction: column;
 	border: solid 2px #eeeeee;
 	width: 100%;
-	height: 30%;
+	height: 140px;
 	background-color: #3a71c7;
 }
 .TitleSearch{
-	font-size: 1.2em;
-	width: 100%
-	height: 30%;
+	font-size: 1.4em;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -127,10 +126,11 @@ animation-delay: 10s;
 .Search{
 	width: 100%;
 	height: 35%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
 
 }
 .BoxButton{
@@ -164,14 +164,14 @@ animation-delay: 10s;
 .Input{
 	margin: 10px;
 	border-radius: 5px;
-	text-align: center;
 	display: flex;
 	justify-content: flex-end;
-    align-items: center;
+	align-items: center;
 	width: 350px;
 	height: 40px;
 	background-color: white;
 	border: none;
+	padding: 0px 15px;
 }
 
 .Input:hover{
@@ -187,7 +187,7 @@ animation-delay: 10s;
 	background-color: #E91E63;
 	color: white;
 	box-shadow: 2px 2px #FA5C98;
-    text-decoration-color: white;
+	text-decoration-color: white;
 
 }
 .Button:hover{
@@ -203,12 +203,12 @@ animation-delay: 10s;
 
 }
 .Persona{
- width: 45%;
- height: 100%;
- display: flex;
- flex-direction: row;
- align-items: center;
- /*background-color: white;*/
+	width: 45%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/*background-color: white;*/
 
 }
 .DivAvatar{
