@@ -42,9 +42,8 @@
 .plan-name-bronze2 {
   min-width: 873px;
   max-width: 873px;
-  max-height: 15px;
   min-height: 15px;
-  padding: 20px;
+  padding: 15px;
   color: #eeeeee;
   background-color: #3a71c7;
   -moz-border-radius: 5px 5px 0 0;
@@ -149,6 +148,7 @@
   max-width: 30vw;
   margin-top: 3px;
   border-radius:  5px 5px 5px 5px;
+  margin: 10px;
 }
 
 .comp:hover{
@@ -158,6 +158,6 @@
 }
 
 .nomes-areas {
-  font-size: 15px;
+  font-size: 1.4em;
   text-align: center;
 }
