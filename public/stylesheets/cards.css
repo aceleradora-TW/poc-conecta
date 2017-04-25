@@ -93,7 +93,13 @@
 	flex-direction: row;
 
 }
-
+.footerResult{
+	background-color: rgba(58, 113, 199, 1);
+	text-align: center;
+	padding: 20px;
+	margin-top: 0px;
+	color: rgba(255, 255, 255, 1);
+}
 .LineDescription{
 	width: 98%;
 	height: 55%;
