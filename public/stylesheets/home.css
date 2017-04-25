@@ -263,3 +263,15 @@ a{
 	text-decoration-style: none;
 	text-decoration-color: white;
 }
+
+footer{
+	background-color: rgba(58, 113, 199, 1);
+	text-align: center;
+	padding: 20px;
+	margin-top: 20px;
+	color: rgba(255, 255, 255, 1);
+}
+
+body{
+	overflow-x: hidden; 
+}
