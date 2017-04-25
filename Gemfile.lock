@@ -49,6 +49,3 @@ DEPENDENCIES
   sinatra
   sinatra-contrib
   tux
-
-BUNDLED WITH
-   1.14.3
