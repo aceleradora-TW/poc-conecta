@@ -1,10 +1,12 @@
 .Text{
 	width: 100%;
 	height: 7%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size: 1.4em;
+	color: rgba(46, 109, 164, 1);
+	margin: 20px;
 }
 .BoxCards{
 	width: 100%;
@@ -17,7 +19,7 @@
 }
 .SectionCards{
 	width: 100%;
-	height: 110vh;
+	height: 115vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,27 +30,22 @@
 	position: relative;
 	width: 95%;
 	height: 45%;
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-
-
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
 }
+
 .Card{
-
-   width: 47%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   background-color: white;
-
-   box-shadow: 1px 1px 5px 2px  rgba(48, 91, 159, 0.2) ;
-
+	width: 47%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 1px 1px 5px 2px  rgba(48, 91, 159, 0.2) ;
 }
-.CardTitle{
 
+.CardTitle{
 	border-radius: 5px;
 	width: 100%;
 	height: 15%;
@@ -58,8 +55,8 @@
 	color: white;
 	align-items: center;
 	background-color: #3a71c7;
-
 }
+
 .CardContent{
 	display: flex;
 	align-items: center;
@@ -67,16 +64,16 @@
 	flex-direction: column;
 	width: 100%;
 	height: 80%;
-
 }
+
 .CardFooter{
 	width: 100%;
 	height: 25%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
+
 .ButtonPrimary{
 	width: 25%;
 	height: 95%;
@@ -84,6 +81,7 @@
 	border-radius: 7px;
 	margin-right: 10px;
 }
+
 .LineLogo{
 	width: 100%;
 	height: 40%;
@@ -91,7 +89,6 @@
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: row;
-
 }
 .footerResult{
 	background-color: rgba(58, 113, 199, 1);
@@ -104,12 +101,12 @@
 	width: 98%;
 	height: 55%;
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 	border-radius: 1px;
-	/*box-shadow: 1px 3px 4px 2px #e0e0e0;*/
-	 box-shadow: 1px 4px 5px 2px  rgba(48, 91, 159, 0.2) ;
+	box-shadow: 1px 4px 5px 2px  rgba(48, 91, 159, 0.2) ;
 	border: none;
 }
+
 .TitleDescription{
 	text-transform: uppercase;
 	width: 100%;
@@ -120,6 +117,7 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .LineList{
 	width: 100%;
 	height: 80%;
@@ -129,15 +127,15 @@
 	border: none;
 	flex-direction: row;
 }
+
 .LogoCard{
 	width: 20%;
 	height: 100%;
 	display:flex;
 	justify-content: center;
 	align-items: center;
-
-
 }
+
 .TextCard{
 	text-align: center;
 	width: 70%;
@@ -149,14 +147,13 @@
 	font-size: 0.9em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: white;
-
 }
+
 .List{
 	width: 32%;
 	height: 100%;
 	display: flex;
 	align-items: center;
-	/*background-color: #f9f9f9;*/
 }
 
 .u-fontBold{
@@ -164,6 +161,7 @@
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
+
 li{
 	line-height: 1.7em;
 	font-weight: lighter;
@@ -174,24 +172,29 @@ li{
 /* BOTAO MAGICO DA GURIZADA */
 
 .magic-button {
-    background-color: rgba(46, 109, 164, 1);
-    border: 2px solid rgba(46, 109, 164, 1);
-    border-radius: 6px;
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 15px;
-    text-align: center;
+	background-color: rgba(46, 109, 164, 1);
+	border: 2px solid rgba(46, 109, 164, 1);
+	border-radius: 6px;
+	color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 15px;
+	text-align: center;
 }
 
 .magic-button:hover {
 	background-color: rgba(255, 255, 255, 1);
-  color: rgba(46, 109, 164, 1);
+	color: rgba(46, 109, 164, 1);
 }
 
 .success-message {
 	color: rgba(0, 128, 0, 1);
-  display: none;
+	display: none;
 	font-size: 16px;
-  padding-left: 15px;
+	padding-left: 15px;
+}
+
+.TextResult {
+	margin-left: 10px;
+	color: #000;
 }
