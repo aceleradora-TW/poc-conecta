@@ -19,16 +19,35 @@
       $('#hardwareArea').hide();
       $('#adminArea').hide();
       $('#softwareArea').show();
+      $('#btnHardware').addClass('active');
+      $('#btnAdmin').removeClass('active');
+      $('#btnSoftware').removeClass('active');
     }else if(area == 'Software'){
       $('#softwareArea').hide();
       $('#adminArea').hide();
       $('#hardwareArea').show();
+      $('#btnHardware').removeClass('active');
+      $('#btnAdmin').removeClass('active');
+      $('#btnSoftware').addClass('active');
     }else if(area == 'Admin'){
       $('#softwareArea').hide();
       $('#hardwareArea').hide();
       $('#adminArea').show();
+      $('#btnHardware').removeClass('active');
+      $('#btnAdmin').addClass('active');
+      $('#btnSoftware').removeClass('active');
     }
   }
+
+ $(document).ready(function() {
+   $("#searchInput").keyup(function(event){
+     if(event.keyCode == 13){
+        $("#searchLink").click();
+      }
+   });
+ })
+
+
 
   //jquery
   console.log($);
@@ -104,10 +123,10 @@
   <div class="TitleSearch">Encontre parcerias agora</div>
 
   <div class="Search">
-    <input type="text"  placeholder="Digite aqui palavras chave. Ex: 'Teste de Software'" class="Input"/>
+    <input type="text"  placeholder="Digite aqui palavras chave. Ex: 'Teste de Software'" class="Input" id="searchInput"/>
 
     <div class="BoxButton">
-      <a href="/search"><div class="Button">Buscar</div></a>
+      <a href="/search"><div class="Button" id="searchLink">Buscar</div></a>
     </div>
   </div>
 </div>
@@ -125,9 +144,9 @@
             Tecnologia da Informação e Comunicação
           </span>
         </div>
-        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Hardware')"><i class="icon-white icon-ok"></i> Hardware</div>
-        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Software')"><i class="icon-white icon-ok"></i> Software</div>
-        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Admin')"><i class="icon-white icon-ok"></i> Administração</div>
+        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Hardware')" id="btnHardware"><i class="icon-white icon-ok"></i> Hardware</div>
+        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Software')" id="btnSoftware"><i class="icon-white icon-ok"></i> Software</div>
+        <div class="btn btn-primary btn-plan-select" onclick="selectArea('Admin')" id="btnAdmin"><i class="icon-white icon-ok"></i> Administração</div>
         <!-- <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Serviços</div>
         <div class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Comercial</div> -->
 
